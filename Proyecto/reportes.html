@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emitir reportes</title>
+    <link rel="stylesheet" href="style_report.css">
+    <link rel="stylesheet" href="style_sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li>=</li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+                <li><a href="busqueda.html">BUSQUEDA</a></li>
+                <li><a href="seleccion.html">SELECCION</a></li>
+                <li><a href="agregar.html">AGREGAR</a></li>
+                <li><a href="editar.html">EDITAR</a></li>
+                <li><a href="eliminar.html">DAR DE BAJA</a></li>
+                <li><a href="login.html">CERRAR SESION</a></li>
+                <li><a href="configuracion.html">CONFIGURACION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-reportes">
+        <h1>Emisión de reportes</h1>
+        <form id="form-reportes">
+            <label for="tipo-reporte">Tipo de reporte:</label>
+            <select id="tipo-reporte" name="tipo-reporte">
+                <option value="existencias-generales">Existencias generales</option>
+                <option value="existencias-por-categoria">Existencias por categoría</option>
+                <option value="equipos-por-encargado">Equipos por encargado</option>
+            </select>
+
+            <label for="filtro-categoria">Categoría (opcional):</label>
+            <select id="filtro-categoria" name="filtro-categoria">
+                <option value="">Todas las categorías</option>
+                </select>
+
+            <label for="filtro-encargado">Encargado (opcional):</label>
+            <select id="filtro-encargado" name="filtro-encargado">
+                <option value="">Todos los encargados</option>
+                </select>
+
+            <button type="submit">Generar reporte</button>
+        </form>
+
+        <div id="contenedor-reporte"></div> </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

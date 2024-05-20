@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda manual</title>
+    <link rel="stylesheet" href="style_select.css">
+    <link rel="stylesheet" href="style_sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li>=</li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+                <li><a href="busqueda.html">BUSQUEDA</a></li>
+                <li><a href="seleccion.html">SELECCION</a></li>
+                <li><a href="agregar.html">AGREGAR</a></li>
+                <li><a href="editar.html">EDITAR</a></li>
+                <li><a href="eliminar.html">DAR DE BAJA</a></li>
+                <li><a href="login.html">CERRAR SESION</a></li>
+                <li><a href="configuracion.html">CONFIGURACION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-busqueda-manual">
+        <h1>Búsqueda manual de equipos</h1>
+        <form id="form-busqueda-manual">
+            <label for="facultad">Facultad:</label>
+            <select id="facultad" name="facultad">
+                <option value="">Todas las facultades</option>
+                <option value="FCACC">Facultad de Ciencias Administrativas, Contables y Comercio</option>
+                <option value="FCS">Facultad de Ciencias de la Salud</option>
+                <option value="FSDB">Facultad de Ciencias Sociales, Derecho y Bienestar</option>
+                <option value="FCVT">Facultad de Ciencias de la Vida y Tecnología</option>
+                <option value="FETAH">Facultad de Educación, Turismo y Humanidades</option>
+                <option value="FIIA">Facultad de Ingeniería, Industria y Arquitectura</option>
+                </select>
+
+            <label for="laboratorio">Laboratorio:</label>
+            <select id="laboratorio" name="laboratorio">
+                <option value="">Todos los laboratorios</option>
+                </select>
+
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="resultados-busqueda-manual"></div> </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

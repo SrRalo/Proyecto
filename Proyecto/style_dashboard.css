@@ -1,0 +1,70 @@
+/* Estilo general del contenedor */
+.container-dashboard {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Calibri, sans-serif;
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  /* Estilo del título */
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de las secciones */
+  section {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de las tarjetas de resumen */
+  .tarjeta-resumen {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilo de los párrafos de las tarjetas de resumen */
+  .tarjeta-resumen p {
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo de los spans de las tarjetas de resumen */
+  .tarjeta-resumen span {
+    font-weight: bold;
+  }
+  
+  /* Estilo de la gráfica */
+  #grafica-categorias {
+    width: 100%; /* Ajusta el ancho a la sección */
+    height: 300px; /* Ajusta la altura a tu gusto */
+  }
+  
+  /* Estilo de la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilo de los encabezados de la tabla */
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  /* Estilo de las filas de la tabla */
+  tr {
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilo de las celdas de la tabla */
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  

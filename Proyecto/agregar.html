@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar</title>
+  <link rel="stylesheet" href="style_add.css">
+  <link rel="stylesheet" href="style_sidebar.css">
+</head>
+<body>
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul>
+            <li>=</li>
+            <li><a href="dashboard.html">DASHBOARD</a></li>
+            <li><a href="busqueda.html">BUSQUEDA</a></li>
+            <li><a href="seleccion.html">SELECCION</a></li>
+            <li><a href="agregar.html">AGREGAR</a></li>
+            <li><a href="editar.html">EDITAR</a></li>
+            <li><a href="eliminar.html">DAR DE BAJA</a></li>
+            <li><a href="login.html">CERRAR SESION</a></li>
+            <li><a href="configuracion.html">CONFIGURACION</a></li>
+        </ul>
+    </nav>
+</div>
+  <div class="container-agregar">
+    <h1>Agregar equipo</h1>
+    <form id="form-agregar">
+      <label for="codigo-agregar">Código del equipo:</label>
+      <input type="text" id="codigo-agregar" name="codigo-agregar" required>
+
+      <label for="nombre-agregar">Nombre del equipo:</label>
+      <input type="text" id="nombre-agregar" name="nombre-agregar" required>
+
+      <label for="estado-agregar">Estado del equipo:</label>
+      <select id="estado-agregar" name="estado-agregar">
+        <option value="Disponible">Disponible</option>
+        <option value="Prestado">Prestado</option>
+        <option value="Reparación">En reparación</option>
+      </select>
+
+      <button type="submit">Agregar</button>
+    </form>
+
+    <div id="mensaje-agregar"></div> </div>
+
+  <script src="script.js"></script> </body>
+</html>

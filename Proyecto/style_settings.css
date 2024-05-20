@@ -1,0 +1,46 @@
+/* Estilo general del contenedor del formulario */
+.container-configuracion {
+    width: 400px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+  }
+  
+  /* Estilo del título del formulario */
+  h1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    color: #333; 
+  }
+  
+  /* Estilo de la etiqueta del formulario */
+  label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #333; 
+  }
+
+  /* Estilo del campo de selección */
+  select {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-sizing: border-box; 
+    background-color: #f5f5f5; 
+    appearance: none; 
+    cursor: pointer; 
+  }
+  
+  /* Estilo del icono de flecha del campo de selección */
+  select::-ms-expand {
+
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%24%20height%3D24%20viewBox%3D%0%200%2024%2024%20fill%3D%22%23333%22%3E%3Cpath%20d%3D%22M16.37%2012l-7.65-7.65l-1.91%201.91l6.74%6.74z%22%20%2F%3E%3Cpath%20d%3D%22M9.37%2012l-7.65-7.65l-1.91%201.91l6.74%6.74z%22%20%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    
+  }  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style_dashboard.css">
+    <link rel="stylesheet" href="style_sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li>=</li>
+                <li><a href="#">DASHBOARD</a></li>
+                <li><a href="busqueda.html">BUSQUEDA</a></li>
+                <li><a href="seleccion.html">SELECCION</a></li>
+                <li><a href="agregar.html">AGREGAR</a></li>
+                <li><a href="editar.html">EDITAR</a></li>
+                <li><a href="eliminar.html">DAR DE BAJA</a></li>
+                <li><a href="login.html">CERRAR SESION</a></li>
+                <li><a href="configuracion.html">CONFIGURACION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-dashboard">
+        <h1>Dashboard de equipos informáticos</h1>
+
+        <section class="seccion-resumen">
+            <h2>Resumen</h2>
+            <div class="tarjeta-resumen">
+                <p>Total de equipos:</p>
+                <span id="total-equipos"></span>
+            </div>
+            <div class="tarjeta-resumen">
+                <p>Equipos disponibles:</p>
+                <span id="equipos-disponibles"></span>
+            </div>
+            <div class="tarjeta-resumen">
+                <p>Equipos prestados:</p>
+                <span id="equipos-prestados"></span>
+            </div>
+        </section>
+
+        <section class="seccion-grafica">
+            <h2>Distribución por categoría</h2>
+            <canvas id="grafica-categorias"></canvas>
+        </section>
+
+        <section class="seccion-tabla">
+            <h2>Últimos equipos agregados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Estado</th>
+                        <th>Categoría</th>
+                        <th>Encargado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

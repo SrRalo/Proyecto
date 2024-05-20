@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link rel="stylesheet" href="style_edit.css">
+    <link rel="stylesheet" href="style_sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li>=</li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+                <li><a href="busqueda.html">BUSQUEDA</a></li>
+                <li><a href="seleccion.html">SELECCION</a></li>
+                <li><a href="agregar.html">AGREGAR</a></li>
+                <li><a href="editar.html">EDITAR</a></li>
+                <li><a href="eliminar.html">DAR DE BAJA</a></li>
+                <li><a href="login.html">CERRAR SESION</a></li>
+                <li><a href="configuracion.html">CONFIGURACION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-editar">
+        <h1>Editar</h1>
+        <form id="form-editar">
+            <label for="id-editar">ID del equipo (código):</label>
+            <input type="text" id="id-editar" name="id-editar" required>
+
+            <label for="nombre-editar">Nombre del equipo:</label>
+            <input type="text" id="nombre-editar" name="nombre-editar" required>
+
+            <label for="estado-editar">Estado del equipo:</label>
+            <select id="estado-editar" name="estado-editar">
+                <option value="Disponible">Disponible</option>
+                <option value="Prestado">Prestado</option>
+                <option value="Reparación">En reparación</option>
+                <option value="Baja">Baja</option>
+            </select>
+
+            <label for="categoria-editar">Categoría del equipo:</label>
+            <select id="categoria-editar" name="categoria-editar">
+                <option value="monitor">Monitor</option>
+                <option value="teclado">teclado</option>
+                <option value="pc">PC</option>
+                <option value="mouse">Mouse</option>
+            </select>
+
+            <label for="encargado-editar">Encargado del equipo:</label>
+            <input type="text" id="encargado-editar" name="encargado-editar" required>
+
+            <button type="submit">Editar equipo</button>
+        </form>
+
+        <div id="mensaje-editar"></div> </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

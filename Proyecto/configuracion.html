@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del sistema</title>
+    <link rel="stylesheet" href="style_settings.css">
+    <link rel="stylesheet" href="style_sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li>=</li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+                <li><a href="busqueda.html">BUSQUEDA</a></li>
+                <li><a href="seleccion.html">SELECCION</a></li>
+                <li><a href="agregar.html">AGREGAR</a></li>
+                <li><a href="editar.html">EDITAR</a></li>
+                <li><a href="eliminar.html">DAR DE BAJA</a></li>
+                <li><a href="login.html">CERRAR SESION</a></li>
+                <li><a href="configuracion.html">CONFIGURACION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-configuracion">
+        <h1>Configuración del sistema</h1>
+        <form id="form-configuracion">
+            <label for="color-tema">Color del tema:</label>
+            <select id="color-tema" name="color-tema">
+                <option value="claro">Claro</option>
+                <option value="oscuro">Oscuro</option>
+            </select>
+
+            <label for="modo-nocturno">Modo nocturno:</label>
+            <input type="checkbox" id="modo-nocturno" name="modo-nocturno">
+
+            <button type="submit">Aplicar cambios</button>
+        </form>
+
+        <div id="mensaje-configuracion"></div> </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

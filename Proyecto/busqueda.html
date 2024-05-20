@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda por código</title>
+    <link rel="stylesheet" href="style_search.css">
+    <link rel="stylesheet" href="style_sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li>=</li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+                <li><a href="busqueda.html">BUSQUEDA</a></li>
+                <li><a href="seleccion.html">SELECCION</a></li>
+                <li><a href="agregar.html">AGREGAR</a></li>
+                <li><a href="editar.html">EDITAR</a></li>
+                <li><a href="eliminar.html">DAR DE BAJA</a></li>
+                <li><a href="login.html">CERRAR SESION</a></li>
+                <li><a href="configuracion.html">CONFIGURACION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-busqueda">
+        <h1>Búsqueda por código de equipo</h1>
+        <form id="form-busqueda-codigo">
+            <label for="codigo">Código de equipo:</label>
+            <input type="text" id="codigo" name="codigo" required>
+
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="resultados-busqueda"></div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

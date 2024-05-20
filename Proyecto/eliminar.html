@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar de baja</title>
+    <link rel="stylesheet" href="style_delete.css">
+    <link rel="stylesheet" href="style_sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li>=</li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+                <li><a href="busqueda.html">BUSQUEDA</a></li>
+                <li><a href="seleccion.html">SELECCION</a></li>
+                <li><a href="agregar.html">AGREGAR</a></li>
+                <li><a href="editar.html">EDITAR</a></li>
+                <li><a href="eliminar.html">DAR DE BAJA</a></li>
+                <li><a href="login.html">CERRAR SESION</a></li>
+                <li><a href="configuracion.html">CONFIGURACION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-dar-de-baja">
+        <h1>Dar de baja</h1>
+        <form id="form-dar-de-baja">
+            <label for="tipo-baja">Tipo de baja:</label>
+            <select id="tipo-baja" name="tipo-baja">
+                <option value="categoria">Categoría</option>
+                <option value="equipo">Equipo</option>
+            </select>
+
+            <label for="id-baja">ID de la baja (código o nombre):</label>
+            <input type="text" id="id-baja" name="id-baja" required>
+
+            <button type="submit">Dar de baja</button>
+        </form>
+
+        <div id="mensaje-baja"></div> </div>
+
+    <script src="script.js"></script>
+</body>
